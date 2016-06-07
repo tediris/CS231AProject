@@ -1,6 +1,6 @@
 # OBJS specifies which files to compile as part of the project
 #OBJS = main.cpp Shader.cpp
-OBJS = game.cpp Shader.cpp
+OBJS = main.cpp Shader.cpp
 
 # CC specifies which compiler we're using
 CC = g++
@@ -22,7 +22,7 @@ COMPILER_FLAGS = -w -std=c++11 -stdlib=libc++
 LINKER_FLAGS = -framework OpenGL -lglfw3 -lglew -laruco -lopencv_core -lopencv_calib3d -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_objdetect -lreactphysics3d -framework GLUT
 
 # OBJ_NAME specifies the name of our exectuable
-OBJ_NAME = main
+OBJ_NAME = new_main
 
 #This is the target that compiles our executable
 all : $(OBJS)
